@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+
+const GalleryStyles = {'border': '1px solid black', margin: '8px', padding: '8px'}
+
 function GalleryItem(props){
     let {item} = props
     console.log(item)
@@ -32,7 +35,8 @@ function GalleryItem(props){
         )
     }
     return (
-        <div onClick={() => setIsDetailView(!isDetailView)} style={{'display': 'inline-block'}}>
+        <div onClick={() => setIsDetailView(!isDetailView)}
+        style={GalleryStyles}>
             {/* This simple ternary shows the simple view when 'view' is false! */}
             {isDetailView ? detailView() : simpleView()}
         </div>

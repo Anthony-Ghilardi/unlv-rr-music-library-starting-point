@@ -1,7 +1,10 @@
+import './ArtistView.css'
+
 function ArtistView() {
     return (
         <div>
-            <h1>Artist Data goes here</h1>
+            {/* Inline styling can override a css file */}
+            <h1 style={{color: 'blue'}}>Artist Data goes here</h1>
         </div>
     )
 }
