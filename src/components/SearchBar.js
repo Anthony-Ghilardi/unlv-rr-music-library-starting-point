@@ -1,15 +1,15 @@
-                
-        import { useState } from 'react'
-        function SearchBar(props) {
-            let [searchTerm, setSearchTerm] = useState('')
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
 
-            return (
-                <form>
-                    <input type="text" placeholder="Enter a search term here" />
-                    <input type="submit" />
-                </form>
-            )
-        }
+function SearchBar(props) {
+  let [searchTerm, setSearchTerm] = useState("");
 
-        export default SearchBar
-    
+  return (
+    <form>
+      <input type="text" placeholder="Enter a search term here" />
+      <Button type="submit">Submit</Button>
+    </form>
+  );
+}
+
+export default SearchBar;
